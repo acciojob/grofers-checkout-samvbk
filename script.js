@@ -6,9 +6,12 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 	const table = document.getElementById("myTable");
-	const price = table.querySelectorAll("tbody td:last-child");
+	const price = table.querySelectorAll("class:price");
 	let total = 0;
-	lastColumn
+	lastColumnCells.forEach(cell=>{
+		const value = Number(cell.textContent.trim) || 0;
+		total+= value;
+	});
   
 };
 

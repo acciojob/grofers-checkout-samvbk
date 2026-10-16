@@ -9,7 +9,7 @@ const getSum = () => {
 	const price = table.querySelectorAll(".price");
 	let total = 0;
 	price.forEach(cell=>{
-		const value = Number(cell.textContent.trim) || 0;
+		const value = Number(cell.textContent.trim()) || 0;
 		total+= value;
 	});
   

@@ -20,7 +20,7 @@ const td1 = document.createElement("td");
 const td2 = document.createElement("td");
 
 td1.textContent("Total Sum");
-td2.textContent(getSum);
+td2.textContent(total);
 
 tr.appendChild(td1);
 tr.appendChild(td2);

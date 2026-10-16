@@ -2,9 +2,7 @@ const getSumBtn = document.createElement("button");
 getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 
-const tr = document.createElement("tr");
-const td1 = document.createElement("td");
-const td2 = document.createElement("td");
+
 
 const getSum = () => {
 	const table = document.getElementById("myTable");
@@ -14,6 +12,9 @@ const getSum = () => {
 		const value = Number(cell.textContent.trim()) || 0;
 		total+= value;
 	});
+	const tr = document.createElement("tr");
+	const td1 = document.createElement("td");
+	const td2 = document.createElement("td");
 	td1.textContent("Total Sum");
 	td2.textContent(total);
 	tr.appendChild(td1);

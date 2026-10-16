@@ -12,7 +12,7 @@ const getSum = () => {
 		const value = Number(cell.textContent.trim()) || 0;
 		total+= value;
 	});
-  
+	return total;
 };
 
 const tr = document.createElement("tr");
@@ -20,7 +20,7 @@ const td1 = document.createElement("td");
 const td2 = document.createElement("td");
 
 td1.textContent("Total Sum");
-td2.textContent(total);
+td2.textContent(getSum);
 
 tr.appendChild(td1);
 tr.appendChild(td2);

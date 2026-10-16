@@ -19,10 +19,11 @@ const getSum = () => {
 	td2.textContent(total);
 	tr.appendChild(td1);
 	tr.appendChild(td2);
+	document.getElementById("myTable").appendChild(tr);
 };
 
 
-document.getElementById("myTable").appendChild(tr);
+
 
 getSumBtn.addEventListener("click", getSum);
 
